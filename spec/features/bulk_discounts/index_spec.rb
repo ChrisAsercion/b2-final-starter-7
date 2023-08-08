@@ -90,7 +90,7 @@ RSpec.describe "Bulk discounts index" do
   describe "User Story 9" do
     it "displays the 3 top holidays" do
       
-      save_and_open_page
+      
       holidays = HolidayService.new.holiday
 
       expect(page).to have_content("Upcoming Holidays")
