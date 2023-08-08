@@ -86,4 +86,22 @@ RSpec.describe "Bulk discounts index" do
       end
     end
   end
+
+  describe "User Story 9" do
+    it "displays the 3 top holidays" do
+      
+      save_and_open_page
+      holidays = HolidayService.new.holiday
+
+      expect(page).to have_content("Upcoming Holidays")
+
+      expect(page).to have_content(holidays.first["localName"])
+      expect(page).to have_content(holidays.second["localName"])
+      expect(page).to have_content(holidays.third["localName"])
+
+      expect(page).to have_content(holidays.first["date"])
+      expect(page).to have_content(holidays.second["date"])
+      expect(page).to have_content(holidays.third["date"])
+    end
+  end
 end

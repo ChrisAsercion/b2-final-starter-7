@@ -2,6 +2,8 @@ class BulkDiscountsController < ApplicationController
 
   def index
     @merchant = Merchant.find(params[:merchant_id])
+    @holidays = HolidayService.new.holiday
+    
   end
 
   def show

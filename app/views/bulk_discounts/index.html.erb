@@ -13,3 +13,10 @@
 <section id ="new_discount">
 <%= link_to "Create a new discount", new_merchant_bulk_discount_path(@merchant), method: :get %>
 </section>
+
+<h2>Upcoming Holidays</h2>
+<ol>
+<% @holidays.each do |holiday| %>
+  <li><%= holiday["localName"]%>  date: <%= holiday["date"]%></li>
+<% end%>
+</ol>
