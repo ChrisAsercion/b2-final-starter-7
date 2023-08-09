@@ -11,6 +11,7 @@ Invoice.destroy_all
 InvoiceItem.destroy_all
 Merchant.destroy_all
 Transaction.destroy_all
+BulkDiscount.destroy_all
 Rake::Task["csv_load:all"].invoke
 
   # @customer_1 = Customer.create!(first_name: "Joey", last_name: "Ondricka")
