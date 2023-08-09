@@ -45,6 +45,6 @@ Rake::Task["csv_load:all"].invoke
   # @ii_1 = InvoiceItem.create!(invoice_id: @invoice_3.id, item_id: @item_1.id, quantity: 20, unit_price: 10, status: 0)
 
 
-  @bulk_discount1 = BulkDiscount.create!(merchant_id: 1, percentage_discount: 20, quantity_threshold: 10, tag: "20% off")
-  @bulk_discount2 = BulkDiscount.create!(merchant_id: 1, percentage_discount: 10, quantity_threshold: 5, tag: "10% off")
-  @bulk_discount3 = BulkDiscount.create!(merchant_id: 1, percentage_discount: 50, quantity_threshold: 40, tag: "50% off")
+  # @bulk_discount1 = BulkDiscount.create!(merchant_id: 1, percentage_discount: 20, quantity_threshold: 10, tag: "20% off")
+  # @bulk_discount2 = BulkDiscount.create!(merchant_id: 1, percentage_discount: 10, quantity_threshold: 5, tag: "10% off")
+  # @bulk_discount3 = BulkDiscount.create!(merchant_id: 1, percentage_discount: 50, quantity_threshold: 40, tag: "50% off")
